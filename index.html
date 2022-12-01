@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="formulario">
+        <form method="post" id="formdata">
+            <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" required="required"></br>
+            <label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos" required="required"></br>
+            <label for="direccion">Correo: </label><input type="text" name="direccion" id="direccion" required="required"></br>
+            Género: <input type="radio" name="genero" id="hombre" checked="checked"><label for="hombre"> Hombre - </label><input type="radio" name="genero" id="mujer"><label for="mujer"> Mujer</label></br>
+            <label for="nacimiento">Fecha de Nacimiento: </label><input type="date" name="mayor" id="mayor" required="required">
+            <input type="button" id="botonenviar" value="Enviar">
+        </form>
+    </div>
+    <div id="exito" style="display:none">
+        Sus datos han sido recibidos con éxito.
+    </div>
+    <div id="fracaso" style="display:none">
+        Se ha producido un error durante el envío de datos.
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
